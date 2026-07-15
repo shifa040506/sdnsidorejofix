@@ -1,0 +1,1425 @@
+/* =====================================================
+   SD NEGERI SIDOREJO
+   STYLE.CSS
+===================================================== */
+
+:root{
+
+    --primary:#0D6EFD;
+    --secondary:#0A58CA;
+    --warning:#FFC107;
+    --success:#198754;
+    --danger:#DC3545;
+    --light:#F8F9FA;
+    --dark:#212529;
+    --white:#FFFFFF;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:15px;
+
+    --transition:.3s;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#444;
+
+    background:#fff;
+
+    overflow-x:hidden;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+section{
+
+    padding:80px 0;
+
+}
+
+/* =====================================================
+TOPBAR
+===================================================== */
+
+.topbar{
+
+    background:#0A58CA;
+
+    color:#fff;
+
+    padding:8px 0;
+
+    font-size:14px;
+
+}
+
+.topbar i{
+
+    color:#FFC107;
+
+}
+
+/* =====================================================
+NAVBAR
+===================================================== */
+
+.navbar{
+
+    padding:15px 0;
+
+    transition:.4s;
+
+}
+
+.navbar-brand h4{
+
+    font-size:22px;
+
+}
+
+.nav-link{
+
+    font-weight:500;
+
+    color:#333!important;
+
+    margin-left:10px;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary)!important;
+
+}
+
+.navbar.scrolled{
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+/* =====================================================
+HERO
+===================================================== */
+
+.hero{
+
+    position:relative;
+
+    padding-top: 110px;
+
+}
+
+.hero-image{
+
+    height:calc(100vh - 110px);
+
+    object-fit:cover;
+
+}
+
+.carousel-item{
+
+    position:relative;
+
+}
+
+.carousel-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+    rgba(0,40,85,.75),
+
+    rgba(0,60,120,.60)
+
+    );
+
+    z-index:1;
+
+}
+
+.carousel-caption{
+
+    z-index:2;
+
+     top:50%;
+
+    left:10%;
+
+    right:10%;
+
+    bottom:auto;
+
+    transform:translateY(-50%);
+
+    text-align:left;
+
+
+}
+
+.carousel-caption h1{
+
+    font-size:58px;
+
+    font-weight:700;
+
+}
+
+.carousel-caption h3{
+
+    font-weight:400;
+
+}
+
+.carousel-caption p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+}
+
+.hero-info{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:12px;
+
+    padding:25px;
+
+}
+
+.hero-info h5{
+
+    color:#FFD54F;
+
+}
+
+.hero-info p{
+
+    color:#fff;
+
+}
+
+/* =====================================================
+BUTTON
+===================================================== */
+
+.btn{
+
+    border-radius:50px;
+
+    padding:12px 28px;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:#0D6EFD;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* =====================================================
+RUNNING TEXT
+===================================================== */
+
+.announcement{
+
+    font-weight:500;
+
+}
+
+.announcement marquee{
+
+    padding-top:5px;
+
+}
+
+/* =====================================================
+QUICK MENU
+===================================================== */
+
+.quick-menu{
+    background:#fff;
+}
+
+.quick-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:all .35s ease;
+
+    height:100%;
+
+    border:1px solid #f0f0f0;
+
+}
+
+.quick-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.quick-card i{
+
+    width:90px;
+
+    height:90px;
+
+    line-height:90px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#0D6EFD,#0A58CA);
+
+    color:#fff;
+
+    font-size:38px;
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+}
+
+.quick-card h5{
+
+    font-weight:600;
+
+    color:#0D6EFD;
+
+    margin-bottom:12px;
+
+}
+
+.quick-card p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* =====================================================
+STATISTIK
+===================================================== */
+
+.statistics{
+
+    background:#F8FAFC;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 20px;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+    height:100%;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card i{
+
+    font-size:55px;
+
+    color:#0D6EFD;
+
+    margin-bottom:18px;
+
+}
+
+.stat-card h2{
+
+    font-size:42px;
+
+    color:#0D6EFD;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+/* =====================================================
+KEPALA SEKOLAH
+===================================================== */
+
+#profil img{
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+#profil img:hover{
+
+    transform:scale(1.03);
+
+}
+
+#profil h2{
+
+    color:#0D6EFD;
+
+    font-weight:700;
+
+}
+
+#profil p{
+
+    line-height:30px;
+
+    color:#555;
+
+}
+
+/* =====================================================
+PROFIL SEKOLAH
+===================================================== */
+
+table{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+table th{
+
+    background:#0D6EFD;
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+table td{
+
+    vertical-align:middle;
+
+}
+
+table tr:hover{
+
+    background:#F8F9FA;
+
+}
+
+/* =====================================================
+LAYANAN
+===================================================== */
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    height:100%;
+
+    border-top:5px solid transparent;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#FFC107;
+
+}
+
+.service-card i{
+
+    font-size:50px;
+
+    color:#0D6EFD;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h4{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+    color:#0D6EFD;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    line-height:28px;
+
+}
+
+.service-card a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:#0D6EFD;
+
+    font-weight:600;
+
+}
+
+.service-card a:hover{
+
+    color:#FFC107;
+
+}
+
+/* =====================================================
+AGENDA
+===================================================== */
+
+.list-group-item{
+
+    border:none;
+
+    margin-bottom:15px;
+
+    border-radius:15px !important;
+
+    box-shadow:var(--shadow);
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+.list-group-item:hover{
+
+    transform:translateX(10px);
+
+}
+
+.list-group-item h5{
+
+    color:#0D6EFD;
+
+    margin-bottom:10px;
+
+}
+
+/* =====================================================
+ALERT
+===================================================== */
+
+.alert{
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* =====================================================
+BERITA
+===================================================== */
+
+#berita{
+
+    background:#F8FAFC;
+
+}
+
+#berita .card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:all .35s ease;
+
+    box-shadow:var(--shadow);
+
+}
+
+#berita .card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+}
+
+#berita .card-img-top{
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+#berita .card:hover .card-img-top{
+
+    transform:scale(1.08);
+
+}
+
+#berita .card-body{
+
+    padding:25px;
+
+}
+
+#berita h5{
+
+    font-weight:600;
+
+    color:#0D6EFD;
+
+    margin:15px 0;
+
+}
+
+#berita p{
+
+    color:#666;
+
+    line-height:28px;
+
+}
+
+/* =====================================================
+PRESTASI
+===================================================== */
+
+.prestasi{
+
+    background:#fff;
+
+}
+
+.prestasi .quick-card{
+
+    border-top:5px solid var(--warning);
+
+}
+
+.prestasi .quick-card:hover{
+
+    background:linear-gradient(180deg,#ffffff,#f8fbff);
+
+}
+
+/* =====================================================
+GALERI
+===================================================== */
+
+.gallery{
+
+    background:#F8FAFC;
+
+}
+
+.gallery-img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.gallery-img:hover{
+
+    transform:scale(1.05);
+
+    filter:brightness(.85);
+
+}
+
+/* =====================================================
+FORM SURVEI
+===================================================== */
+
+form label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.form-control,
+.form-select{
+
+    border-radius:12px;
+
+    min-height:50px;
+
+    border:1px solid #d9d9d9;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#0D6EFD;
+
+    box-shadow:0 0 0 .2rem rgba(13,110,253,.15);
+
+}
+
+textarea.form-control{
+
+    min-height:150px;
+
+}
+
+/* =====================================================
+KONTAK
+===================================================== */
+
+#kontak .card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+#kontak h4{
+
+    color:#0D6EFD;
+
+    font-weight:700;
+
+}
+
+#kontak p{
+
+    line-height:30px;
+
+}
+
+#kontak i{
+
+    color:#0D6EFD;
+
+}
+
+iframe{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+.footer{
+
+    background:#0B2343;
+
+    padding:70px 0 25px;
+
+}
+
+.footer h4,
+.footer h5{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#d6d6d6;
+
+    line-height:28px;
+
+}
+
+.footer ul{
+
+    padding-left:0;
+
+}
+
+.footer ul li{
+
+    list-style:none;
+
+    margin-bottom:10px;
+
+}
+
+.footer a{
+
+    color:#d6d6d6;
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#FFC107;
+
+    padding-left:6px;
+
+}
+
+.footer hr{
+
+    opacity:.2;
+
+}
+
+/* =====================================================
+BACK TO TOP
+===================================================== */
+
+.back-to-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    background:#0D6EFD;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    z-index:999;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+    background:#FFC107;
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+}
+
+/* =====================================================
+SECTION TITLE
+===================================================== */
+
+section h2{
+
+    font-weight:700;
+
+    color:#0D6EFD;
+
+}
+
+.badge{
+
+    border-radius:50px;
+
+    padding:10px 20px;
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+
+}
+
+/* =====================================================
+UTILITY
+===================================================== */
+
+.shadow-custom{
+
+    box-shadow:var(--shadow);
+
+}
+
+.radius{
+
+    border-radius:20px;
+
+}
+
+.bg-soft{
+
+    background:#F8FAFC;
+
+}
+
+.text-primary-custom{
+
+    color:#0D6EFD;
+
+}
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+/* Laptop Besar */
+@media (max-width:1400px){
+
+    .hero-image{
+        height:85vh;
+    }
+
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .carousel-caption h1{
+        font-size:48px;
+    }
+
+    .carousel-caption h3{
+        font-size:24px;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .navbar-brand img{
+        height:55px;
+    }
+
+    .navbar-brand h4{
+        font-size:20px;
+    }
+
+    .hero-image{
+        height:70vh;
+    }
+
+    .carousel-caption{
+        bottom:10%;
+        text-align:center;
+    }
+
+    .carousel-caption h1{
+        font-size:38px;
+    }
+
+    .carousel-caption h3{
+        font-size:22px;
+    }
+
+    .hero-info{
+        margin-top:20px;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .topbar{
+        text-align:center;
+        font-size:13px;
+    }
+
+    .topbar .text-end{
+        text-align:center!important;
+        margin-top:5px;
+    }
+
+    .hero-image{
+        height:60vh;
+    }
+
+    .carousel-caption{
+
+        left:8%;
+        right:8%;
+        bottom:8%;
+
+    }
+
+    .carousel-caption h1{
+
+        font-size:30px;
+
+    }
+
+    .carousel-caption h3{
+
+        font-size:18px;
+
+    }
+
+    .carousel-caption p{
+
+        font-size:15px;
+
+        line-height:24px;
+
+    }
+
+    .hero-info{
+
+        display:none;
+
+    }
+
+    .btn{
+
+        width:100%;
+        margin-bottom:10px;
+
+    }
+
+    .quick-card{
+
+        padding:25px;
+
+    }
+
+    .service-card{
+
+        padding:25px;
+
+    }
+
+    .stat-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .gallery-img{
+
+        height:200px;
+
+    }
+
+}
+
+/* Mobile Kecil */
+
+@media (max-width:576px){
+
+    .navbar-brand h4{
+
+        font-size:18px;
+
+    }
+
+    .navbar-brand small{
+
+        display:none;
+
+    }
+
+    .hero-image{
+
+        height:55vh;
+
+    }
+
+    .carousel-caption h1{
+
+        font-size:26px;
+
+    }
+
+    .carousel-caption h3{
+
+        font-size:16px;
+
+    }
+
+    .carousel-caption p{
+
+        display:none;
+
+    }
+
+}
+
+/* =====================================================
+HOVER ANIMATION
+===================================================== */
+
+.card,
+.quick-card,
+.service-card,
+.stat-card{
+
+    transition:.35s ease;
+
+}
+
+.card:hover,
+.quick-card:hover,
+.service-card:hover,
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* =====================================================
+IMAGE EFFECT
+===================================================== */
+
+img{
+
+    transition:.35s;
+
+}
+
+img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* =====================================================
+NAVBAR SCROLL
+===================================================== */
+
+.navbar.scrolled{
+
+    background:#ffffff !important;
+
+    padding:10px 0;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+/* =====================================================
+SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0D6EFD;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0A58CA;
+
+}
+
+/* =====================================================
+TEXT SELECTION
+===================================================== */
+
+::selection{
+
+    background:#0D6EFD;
+
+    color:#fff;
+
+}
+
+/* =====================================================
+LOADING EFFECT
+===================================================== */
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+COUNTER
+===================================================== */
+
+.counter{
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+SOCIAL BUTTON
+===================================================== */
+
+.social-icon{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#0D6EFD;
+
+    color:#fff;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+.social-icon:hover{
+
+    background:#FFC107;
+
+    color:#000;
+
+}
+
+/* =====================================================
+MAP
+===================================================== */
+
+iframe{
+
+    min-height:420px;
+
+}
+
+/* =====================================================
+PRELOADER (Opsional)
+===================================================== */
+
+#preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#fff;
+
+    z-index:99999;
+
+}
+
+/* =====================================================
+PRINT
+===================================================== */
+
+@media print{
+
+    .navbar,
+    .topbar,
+    footer,
+    .back-to-top{
+
+        display:none;
+
+    }
+
+}
